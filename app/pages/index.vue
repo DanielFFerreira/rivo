@@ -3,8 +3,8 @@
     <LayoutHeader />
     <LandingPageHeroSection />
     <LandingPageBestSellingSection />
-    <LandingPageExclusiveOfferSection />
     <LandingPageOurProductsSection />
+    <LandingPageExclusiveOfferSection />
     <LandingPageNewsletterSection />
     <LayoutFooter />
   </div>
