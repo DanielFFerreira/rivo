@@ -9,8 +9,6 @@
             <NuxtImg
               src="/logo/rivo.png"
               alt="Rivo"
-              width="80"
-              height="32"
               class="h-auto w-[68px] brightness-0 invert sm:w-[80px]"
             />
           </NuxtLink>
