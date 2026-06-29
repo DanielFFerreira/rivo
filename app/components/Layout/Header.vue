@@ -1,7 +1,7 @@
 <template>
   <header class="bg-[#C2EFD4]">
     <div
-      class=" px-4 py-4 sm:px-6 sm:py-5 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-8 lg:py-6"
+      class="flex items-center justify-between px-4 py-4 sm:px-6 sm:py-5 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:px-8 lg:py-6"
     >
       <NuxtLink to="/" aria-label="Go to homepage" class="justify-self-start">
         <NuxtImg
