@@ -5,6 +5,8 @@
     <LandingPageBestSellingSection />
     <LandingPageOurProductsSection />
     <LandingPageExclusiveOfferSection />
+    <LandingPageDesignerSection />
+    <LandingPageTestimonialsSection />
     <LandingPageNewsletterSection />
     <LayoutFooter />
   </div>
