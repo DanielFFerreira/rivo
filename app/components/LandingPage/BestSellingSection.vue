@@ -22,7 +22,9 @@
           class="inline-flex min-h-12 min-w-40 items-center justify-center gap-3 border border-[#224F34] px-6 font-poppins text-sm font-medium text-[#224F34] transition-colors hover:bg-[#224F34] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#224F34] sm:text-base"
         >
           See all
-          <span aria-hidden="true">&rarr;</span>
+          <span aria-hidden="true">
+            <Icon name="ri:arrow-right-line" size="24" />
+          </span>
         </NuxtLink>
       </div>
     </div>

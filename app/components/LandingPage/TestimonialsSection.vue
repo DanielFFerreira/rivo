@@ -58,7 +58,7 @@
             aria-label="Previous testimonials"
             @click="prev"
           >
-            ‹
+            <Icon name="ri:arrow-left-line" size="18" />
           </button>
           <button
             type="button"
@@ -67,7 +67,7 @@
             aria-label="Next testimonials"
             @click="next"
           >
-            ›
+            <Icon name="ri:arrow-right-line" size="18" />
           </button>
         </div>
       </div>
