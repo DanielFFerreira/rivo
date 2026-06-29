@@ -10,6 +10,8 @@ Landing page de moda desenvolvida com **Nuxt 4**, **Vue 3**, **TypeScript**, **T
 - Grade de produtos mais vendidos
 - Catálogo com filtro reativo por categoria
 - Banner de oferta exclusiva com contador regressivo funcional
+- Grid de categorias de moda (Accessories, Dresses, Outerwear)
+- Seção de depoimentos paginada com navegação prev/next
 - Formulário de newsletter com feedback de confirmação
 - Rodapé com colunas de links e ícones sociais
 - Página de erro personalizada
@@ -59,13 +61,16 @@ app/
 │       ├── BestSellingSection.vue   # Produtos em destaque
 │       ├── ProductCard.vue          # Card reutilizável de produto
 │       ├── OurProductsSection.vue   # Catálogo com filtro por categoria
-│       ├── ExclusiveOfferSection.vue # Banner com countdown regressivo
-│       └── NewsletterSection.vue    # Captura de e-mail
+│       ├── ExclusiveOfferSection.vue  # Banner com countdown regressivo
+│       ├── DesignerSection.vue        # Grid de categorias de moda
+│       ├── TestimonialsSection.vue    # Depoimentos paginados
+│       └── NewsletterSection.vue      # Captura de e-mail
 └── assets/css/
-    └── main.css                     # @theme, fontes e DaisyUI
+    └── main.css                       # @theme, fontes e DaisyUI
 public/
-├── logo/, icon/, hero/, products/   # Assets estáticos
-└── offer/                           # Imagem da seção de oferta
+├── logo/, icon/, hero/, products/     # Assets estáticos
+├── offer/                             # Imagem da seção de oferta
+└── categories/                        # Imagens das categorias (accessories, dresses, outerwear)
 ```
 
 ## 🚀 Como rodar
@@ -94,6 +99,8 @@ npm run generate
 - Dados de produtos e conteúdo ficam **diretamente nos componentes** (sem backend ou store), alteráveis pelo `<script setup>` de cada seção
 - O `ProductCard` tem modo `compact` para uso no catálogo (grid 4 colunas) e modo normal para best selling (grid 3 colunas)
 - O countdown da `ExclusiveOfferSection` inicializa no `onMounted` para evitar hydration mismatch com SSR
+- A `DesignerSection` usa `reactive()` com flag `imageError` por item, permitindo fallback individual sem afetar os demais cards
+- A `TestimonialsSection` pagina os depoimentos via `computed + slice`, sem biblioteca de slider
 
 ## 📎 Repositório
 
